@@ -1,0 +1,30 @@
+<h1>Blogs</h1>
+<p>blurb about blog and what it is
+
+</p>
+
+
+<% @blogs.each do |blog| %>
+  	 <div><br /> 
+  	<h1><%= link_to blog.title.titleize, blog %></h1>
+  	<div class="bloghead">
+  			<span>by <%= blog.author %>
+    		<br />
+    		on <%= blog.date.strftime('%d/%m/%Y %H:%M') %></span>
+   	<article>
+	   <p> <%= image_tag(blog.image_url, :alt => blog.image_url)%>
+	     
+	    <%= blog.content %></p>
+    </article>
+ </div>
+ </div>
+<br />  
+<% end %>
+
+
+<aside>some content here
+   	
+   		<!--if admin-->
+	<%= link_to 'New Post', new_blog_path, :title =>'create new post' %>
+<!--else nothing-->
+</aside>

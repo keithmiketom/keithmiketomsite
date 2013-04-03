@@ -1,0 +1,100 @@
+// Place all the styles related to the galleries controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "variables.css.scss";
+    
+#notice{
+  @include border-radius(5px);
+  background-color:  $hover;
+  width:45%;
+  
+  
+}
+h1{
+  background-color:$bl-col;
+  @include tear-border(25px);
+  min-width:150px;
+  max-width:270px;
+  height:auto;
+  padding: 20px 10px;
+  text-align:center;
+  font-size:1.2em;
+ 
+}
+#divbox{
+
+  width:55%;
+}
+.gal_thumb{ 
+  width: 150px;
+  height:200px;
+  padding:10px 30px;
+  background-color:$bg-col;
+  @include border-radius(5px);
+  float:left;
+  margin:10px;
+}
+.details{
+  float:left;
+  text-align:left;
+  strong{
+    font-size:0.8em; 
+  }
+  em{font-size:0.75em;
+  &:hover{
+    font-style:normal;
+    }
+  }
+}
+
+
+
+
+.gal_admin{
+  float:right;
+
+  
+  a{background-color:black;
+  width:80px;
+  height:15px;
+  @include tear-border(10px);
+  padding:5px 10px;
+  margin-right:10px;
+    color:white;
+    text-decoration:none;
+      &:hover{
+        color:$bg-col;
+      }
+    
+  }
+}
+
+.gal_thumb img{
+  width:150px;
+ 
+}
+a {
+  img{
+    @include border-radius(9px);
+  }
+}
+.gallery_holder{
+  width:75%;
+  height:auto;
+  overflow:auto;
+  @include border-radius(15px);
+  background-color:$bg-col;
+  padding:30px;
+  margin:auto 5px;
+  float:left;
+}
+.main aside{
+  float:right;
+  width:40%;
+}
+.main aside.detailbox{
+  width:72%;
+  float:left;
+  margin:10px auto 0;
+}

@@ -1,0 +1,24 @@
+<%= link_to 'Edit', edit_blog_path(@blog) %> |
+<%= link_to 'Back', blogs_path %>
+<p id="notice"><%= notice %></p>
+
+<h1>
+  <%= @blog.title.titleize %>
+</h1>
+<div class="bloghead">
+<span>
+  <%= @blog.author %>
+<br />
+  <%= @blog.date.strftime('%d/%m/%Y %H:%M') %>
+  <%= link_to 'x', @blog, method: :delete, data: { confirm: 'Are you sure?' }, :title => 'delete post' %>
+</span>
+
+<article>
+	<p><%= image_tag(@blog.image_url, :alt => @blog.image_url, :title =>@blog.image_url) %><%= simple_format @blog.content %></p>
+
+</article>
+	
+</div>
+
+<p><%= render 'comment/form' %></p>
+

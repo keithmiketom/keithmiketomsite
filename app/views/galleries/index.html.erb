@@ -1,0 +1,20 @@
+<h1>Artwork</h1>
+
+<div id="divbox" class="clearfix">
+<% @galleries.each do |gallery| %>
+<div class="gal_thumb clearfix"">
+	<%= link_to image_tag(gallery.image_url, :alt => gallery.caption, :id => gallery.caption.gsub(/\s+/, "").downcase), gallery, :title =>gallery.caption %><!--thumbnail-->
+	
+
+<div class="details">
+		<strong><%= gallery.caption %></strong><br />
+		<em><%= gallery.date_added.strftime('%d/%m/%Y') %></em>
+	</div><!--end of details-->
+</div><!--end of gal_thumb-->
+<% end %>
+<!--if admin-->
+</div><!--end of divbox-->
+<aside class="add_gal">
+<%= link_to 'New Gallery', new_gallery_path %>
+</aside><!--end of add_gal-->
+

@@ -1,0 +1,70 @@
+// Place all the styles related to the blogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+//@mixin .borderradius()
+
+@import "variables.css.scss";
+  .main h1{
+      @include tear-border(30px);
+      background-color:lighten($bl-col, 20%);
+      margin:0.5em 0 0 -1.0em;
+      position:relative;
+      z-index:1000;
+            a{
+              color:#fff;
+              text-decoration:none;
+              &:hover{
+                text-decoration:underline;
+              }//close the hover
+            }//close the a
+     }//close the h1
+div.bloghead {
+  margin:-2.0em 0 0;
+  @include border-radius(25px);
+  background-color:lighten($bl-col, 10%);
+  min-height:6em;
+  overflow:auto;
+  width:65%;
+  position:relative;
+  z-index:2;
+    span{
+      float:right;
+      text-align:right;
+      margin:0em 1em 0 4em;
+        padding: 1.5em;
+        font-size:0.8em;
+    }
+    p{//add content to show author avatar
+        text-align:justify;
+        margin:0em 1em 0 4em;
+        padding: 1.5em;
+        font-size:0.8em;  
+      }
+    article {
+      @include border-radius(10px);
+      background-color:$bg-col;
+      width:96%;
+      color:#222;
+      margin:0.5em 2% 1.5em;
+        img {
+          float:left;
+          padding:10px;
+          margin:0px 15px 10px;
+          @include border-radius(20px);
+          border:0.5em solid $bl-col;
+          background-color:complement($bl-col);
+            }
+        p{
+          float:left;
+          margin:10px 0 0 0;
+          p{
+            float:left;
+          }
+        }//close p
+    }//close article
+}//close bloghead
+
+.article{
+  margin:1em;
+}
+

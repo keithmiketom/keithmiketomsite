@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+<!--this shows individual gallery contents-->
+<div class="main">
+	<h1><%= @gallery.caption %></h1>
+	<div class="gallery_holder">
+		<p> some tst here</p>
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		
+	</div>
+	<div class="sbar">
+		<p>some txt here</p>
+		</div>
+	<aside class="detailbox clearfix"><h3><%= @title %></h3>
+		<%= @gallery.description %>
+		<br />
+		<br />
+		<br />
+		<!--admin only-->
+		<!--Image uploader-->
+			<div class="gal_admin clearfix">
+				
+				
+    			<%= link_to 'Back', galleries_path %>
+				<%= link_to 'Edit', edit_gallery_path(@gallery) %> 
+				<%= link_to 'Destroy', @gallery, method: :delete, data: { confirm: 'Are you sure?' } %>
+			</div>
+	</aside><!--image uploader for admin should go here-->
+</div>
+
+
