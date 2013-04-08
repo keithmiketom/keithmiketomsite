@@ -1,5 +1,8 @@
 Keithmiketom3::Application.routes.draw do
 
+  resources :welcomes
+
+
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
@@ -10,7 +13,7 @@ Keithmiketom3::Application.routes.draw do
 
   resources :blogs do
   
-    resources :comments, :only => [:create]
+    resources :comments, :only => [:create, :destroy]
    end
   resources :indices
 

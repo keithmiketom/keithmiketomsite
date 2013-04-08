@@ -9,11 +9,12 @@
 <body id="<%= @title.gsub(/\s+/, "").downcase %>">
 
 <%= render 'layouts/header'%>
-<%= render 'layouts/nav' %>
-<div class="clearfix main wrapper">
-<%= yield %>
+	<div class="main-container">
+		<div class="main wrapper clearfix">
+			<%= yield %>
 
-</div>
+		</div>
+	</div><!--main cnotain-->
 <%= render 'layouts/footer' %>
 </body>
 </html>

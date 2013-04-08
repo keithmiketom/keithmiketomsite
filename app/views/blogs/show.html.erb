@@ -10,15 +10,21 @@
   <%= @blog.author %>
 <br />
   <%= @blog.date.strftime('%d/%m/%Y %H:%M') %>
-  <%= link_to 'x', @blog, method: :delete, data: { confirm: 'Are you sure?' }, :title => 'delete post' %>
+<br />
+  <%= link_to 'delete post', @blog, method: :delete, data: { confirm: 'Are you sure?' }, :title => 'delete post' %>
 </span>
 
 <article>
 	<p><%= image_tag(@blog.image_url, :alt => @blog.image_url, :title =>@blog.image_url) %><%= simple_format @blog.content %></p>
-
+  
 </article>
 	
 </div>
+<%if @blog.comments.length > 0 %>
+	<%= render @blog.comments %>
+<%else%>
+	<p>There are currently no comments for this post</p>
+<%end%>
 
-<p><%= render 'comment/form' %></p>
+<p><%= render 'comments/form' %></p>
 

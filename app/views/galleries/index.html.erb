@@ -1,8 +1,7 @@
 <h1>Artwork</h1>
-
-<div id="divbox" class="clearfix">
+<article id="divbox">
 <% @galleries.each do |gallery| %>
-<div class="gal_thumb clearfix"">
+<div class="gal_thumb">
 	<%= link_to image_tag(gallery.image_url, :alt => gallery.caption, :id => gallery.caption.gsub(/\s+/, "").downcase), gallery, :title =>gallery.caption %><!--thumbnail-->
 	
 
@@ -13,8 +12,12 @@
 </div><!--end of gal_thumb-->
 <% end %>
 <!--if admin-->
-</div><!--end of divbox-->
-<aside class="add_gal">
+</article>
+<aside id="gallside"><!--stylise accordian jQuery-->
+	<% @galleries.each do |gallery| %>
+		<h3><%= gallery.caption %></h3>
+		<p><%= gallery.description %></p>
+	<% end %>
 <%= link_to 'New Gallery', new_gallery_path %>
 </aside><!--end of add_gal-->
 

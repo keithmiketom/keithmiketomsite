@@ -61,7 +61,12 @@ textarea {
 
 body {
     font: 16px/26px 'Novecentowide-Light', Helvetica, 'Helvetica Neue', Arial;
+    p{
+      font-family: sans-serif;
+      color:darken(#222, 20%);
+    }
 }
+
 
 .wrapper {
     width: 90%;
@@ -109,11 +114,12 @@ nav ul {
 		    font-weight: bold;
 		
 		    color: white;
-		    background:  $bl-col;
+		    background:lighten( $bl-col, 5%);
 		    @include tear-border(20px);
 		    &:hover{
 		      background-color:darken( $bl-col, 20%);
 		      text-decoration: underline;
+		      color:white;
 		    }
 		    &:visited{
 		       color: white;
@@ -232,8 +238,8 @@ article{
     }
 
     nav {
-        float: right;
-        width: 58%; 
+        width: 68%; 
+        margin:0 auto;
  
     }
 

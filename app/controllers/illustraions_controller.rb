@@ -1,2 +1,0 @@
-class IllustraionsController < ApplicationController
-end

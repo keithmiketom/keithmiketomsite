@@ -24,6 +24,7 @@ div.bloghead {
   background-color:lighten($bl-col, 10%);
   min-height:6em;
   overflow:auto;
+  min-width:350px;
   width:65%;
   position:relative;
   z-index:2;
@@ -43,6 +44,7 @@ div.bloghead {
     article {
       @include border-radius(10px);
       background-color:$bg-col;
+      min-width:330px;
       width:96%;
       color:#222;
       margin:0.5em 2% 1.5em;

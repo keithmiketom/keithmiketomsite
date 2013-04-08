@@ -4,8 +4,9 @@ header{
   width:100%;
   margin: 0 auto;
   img{
-    margin: 0 auto;
-    width:50%;
+    margin-left:-45px;
+    min-width:400px;
+    width:60%;
     background-color:#488cdf;
     &:hover{
       background: #efef6e; /* Old browsers */
@@ -23,24 +24,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efef6e', end
   }
   
 }
-header div h2{
-  float:right;
-  color:white;
-  text-align:right;
-  margin-right:2em;
-   font-family:'League Gothic';
-   font-size:2.0em;
-  }
 header div{
-  width:40%;
-  float:right;
-  text-align:left;
-  //  h1{
-  //     font:2.0em/1em sans-serif;
-  //  }
-  //  h2{
-  //     font:2.0em/1em  sans-serif;
-  //  }
+    float:right;
+    margin-right:-25px;
+    width:40%;
+    h2{
+    color:white;
+    text-align:right;
+    font-family:'League Gothic';
+    font-size:2.0em;
+   
+  }
+
 }
 footer {
   clear:left;

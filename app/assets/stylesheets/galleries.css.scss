@@ -24,7 +24,7 @@ h1{
 }
 #divbox{
 
-  width:55%;
+  width:70%;
 }
 .gal_thumb{ 
   width: 150px;
@@ -92,6 +92,11 @@ a {
 .main aside{
   float:right;
   width:40%;
+}
+aside#gallside{
+  width:20%;
+  margin-top:10px;
+  min-height:200px;
 }
 .main aside.detailbox{
   width:72%;
