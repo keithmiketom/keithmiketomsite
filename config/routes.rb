@@ -1,5 +1,8 @@
 Keithmiketom3::Application.routes.draw do
 
+  resources :comments
+
+
   resources :welcomes
 
 
@@ -13,7 +16,7 @@ Keithmiketom3::Application.routes.draw do
 
   resources :blogs do
   
-    resources :comments, :only => [:create, :destroy]
+    resources :comments, :only => [:create, :new, :update, :destroy]
    end
   resources :indices
 

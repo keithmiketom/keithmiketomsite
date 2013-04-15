@@ -20,11 +20,15 @@
 </article>
 	
 </div>
-<%if @blog.comments.length > 0 %>
-	<%= render @blog.comments %>
-<%else%>
-	<p>There are currently no comments for this post</p>
-<%end%>
 
-<p><%= render 'comments/form' %></p>
+<%= link_to 'reply to this post', new_comment_path, :title => 'new comment' %>
+<% @comments.each do |comment|%>
+<div>
+	
+	<p><%= comment.author %> <%= comment.created_at.strftime('%d/%m/%Y %H:%M') %> <br />
+	<%= comment.subject%></p>
+	<p><%= comment.content %></p>
+</div>
+<% end %>
+
 

@@ -47,6 +47,14 @@ footer {
     color:#fff;
     font-size: 0.8em;
     margin-right:4em;
-  }
+    li{color:white;
+  a{
+    color:#fff;
+    text-decoration:none;
+    &:hover{
+      color:darken(white, 20%);
+      text-decoration:underline;
+    }
+  }}}
 }
 

@@ -4,14 +4,20 @@
 	<h1><%= @gallery.caption %></h1>
 	<div class="gallery_holder">
 		<p> some tst here</p>
+		<!-- put loop here for gallery contents-->
+		<div>
+			<a href="" rel="lightbox[galleryname]"><img src="assets/images/thumbnail.png" width="150px" alt="thumbnail" /></a>
+		</div>
+		
 		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 		
 	</div>
 	<div class="sbar">
 		<p>some txt here</p>
 		</div>
-	<aside class="detailbox clearfix"><h3><%= @title %></h3>
-		<%= @gallery.description %>
+	<aside class="detailbox clearfix">
+		<h3><%= @title %></h3>
+		<p><%= @gallery.description %></p>
 		<br />
 		<br />
 		<br />
