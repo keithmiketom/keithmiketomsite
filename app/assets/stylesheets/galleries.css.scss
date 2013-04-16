@@ -80,7 +80,7 @@ a {
   }
 }
 .gallery_holder{
-  width:75%;
+  width:80%;
   height:auto;
   overflow:auto;
   @include border-radius(15px);
@@ -102,4 +102,15 @@ aside#gallside{
   width:72%;
   float:left;
   margin:10px auto 0;
+}
+div.thumb{
+  float:left;
+  margin:5px;
+
+    p{
+      span{
+      font-size:0.8em;
+      }
+ 
+  }
 }

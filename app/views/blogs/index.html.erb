@@ -1,6 +1,7 @@
 <h1>Blogs</h1>
 <article id="divbox">
-<p>blurb about blog and what it is
+<p class="intro">This is a journal of my work processes in Web Design, Web Development, Illustration and Art &amp; Design. It chronicles work I am developing at the moment
+	in both these areas of practice.
 
 </p>
 
@@ -15,7 +16,7 @@
    	<article>
 	   <p> <%= image_tag(blog.image_url, :alt => blog.image_url)%>
 	     
-	    <%= blog.content %></p>
+	    <%= raw(truncate(h(blog.content), :length =>200, :separator => ' ', :omission =>link_to("...Read More", blog))) %></p>
     </article>
  </div>
  </div>

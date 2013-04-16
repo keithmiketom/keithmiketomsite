@@ -1,6 +1,7 @@
 Keithmiketom3::Application.routes.draw do
 
   resources :comments
+  resources :illustrations
 
 
   resources :welcomes
