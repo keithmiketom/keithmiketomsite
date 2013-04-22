@@ -21,7 +21,7 @@ Keithmiketom3::Application.routes.draw do
   
     resources :comments, :only => [:create, :new, :update, :destroy]
    end
-  resources :indices
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -29,6 +29,13 @@ Keithmiketom3::Application.routes.draw do
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
+    match 'about' => 'welcomes#about'
+  
+    match 'contact' => 'welcomes#contact'
+    
+
+    
+
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
@@ -72,7 +79,7 @@ Keithmiketom3::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'galleries#index'
+  root :to => 'parallax#home'
 
   # See how all your routes lay out with "rake routes"
 
