@@ -70,7 +70,11 @@ body {
 
 .wrapper {
     width: 90%;
-    margin: 0 5%;
+   /* margin: 0 5%;*/
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 5% -160px;
 }
 
 /* ===================

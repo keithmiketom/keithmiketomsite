@@ -1,14 +1,13 @@
 class WelcomesController < InheritedResources::Base
-  
-  layout "home"
+ layout "application"
+ 
   def index
     @title = "keithmiketom.com"
     respond_to do |format|
       format.html # index.html.erb
     end
   end
-  
-  layout "application"
+
   def about
     @title = "About This Site"
     respond_to do |format|

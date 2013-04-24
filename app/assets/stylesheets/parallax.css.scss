@@ -1,11 +1,12 @@
 // Place all the styles related to the parallax controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "variables.css.scss";
 
-body{
+body#parallax{
   background-color:magenta;
   
-}
+
 
 div#wrapper{
    width:700px;
@@ -13,4 +14,14 @@ div#wrapper{
    border:10px solid teal; 
    margin: 150px auto;
    background-color:white;
+   overflow:auto;
+   padding:5px 10px 20px;
+   text-align:justify;
+   font-family:sans-serif;
+   h1{
+      font-family: 'Novecentowide-Normal';
+     text-align:center;
+   }
+}
+
 }

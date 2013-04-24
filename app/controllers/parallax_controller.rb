@@ -1,6 +1,7 @@
 class ParallaxController < ApplicationController
   
   layout "home"
+  
  def home
     @title = "Welcome to the site"
     respond_to do |format|
