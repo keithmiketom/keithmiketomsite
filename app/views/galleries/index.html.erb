@@ -1,3 +1,9 @@
+ <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css" />
+<%= javascript_include_tag "galleries.js" %>
+
 <h1>Artwork</h1>
 <article id="divbox">
 <% @galleries.each do |gallery| %>
@@ -15,9 +21,14 @@
 </article>
 <aside id="gallside"><!--stylise accordian jQuery-->
 	<% @galleries.each do |gallery| %>
+	
 		<h3><%= gallery.caption %></h3>
-		<p><%= gallery.description %></p>
+		<div>
+			<p>
+				<%= gallery.description %>
+			</p>
+		</div>
+	
 	<% end %>
 <%= link_to 'New Gallery', new_gallery_path %>
 </aside><!--end of add_gal-->
-

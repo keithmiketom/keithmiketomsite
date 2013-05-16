@@ -10,5 +10,14 @@
  *
  *= require reset
  *= require_self
- *= require_tree .
+ *= require blogs
+ *= require comment
+ *= require galleries
+ *= require illustraions
+ *= require lightbox
+ *= require main
+ *= require scaffolds
+ *= require normalize    
+ *= require variables
+ *= require normalize    
  */
