@@ -45,7 +45,7 @@ specialism in Graphic Design, though I always took a "Fine Art" methodology to m
 </div>
 </div>
 			<div id="decorative" class="grid_5 omega">
-				<%=image_tag "raybee.gif"%>
+				<%=image_tag "raybee.gif", :class => "drag" %>
 				<%=image_tag "nav/city_over.gif"%>
 			</div>
 
@@ -182,8 +182,12 @@ the form and I'll get in touch</p>
 <%= javascript_include_tag "jquery.stellar.min" %>
 <%= javascript_include_tag "scripts" %>
 <%= javascript_include_tag "js" %>
-
+<%= javascript_include_tag "jquery-ui-1.10.2.custom.min" %>
 <%= javascript_include_tag "jquery.transform-0.9.3.min_.js" %>
-<%= javascript_include_tag "jquery.RotateImageMenu.js" %><
+<%= javascript_include_tag "jquery.RotateImageMenu.js" %>
+<script>
+	
+		$(".drag").draggable();
+</script>
 			</body>
 </html>
