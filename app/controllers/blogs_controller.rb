@@ -5,6 +5,7 @@ class BlogsController < ApplicationController
     @blogs = Blog.all
     @title = "Art Blog"
     @blogs = Blog.order('id DESC')
+    @blogs = @blogs.paginate(:page => params[:page], :per_page => 5)
 
     respond_to do |format|
       format.html # index.html.erb

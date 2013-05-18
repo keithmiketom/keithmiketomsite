@@ -22,11 +22,14 @@
  </div>
 <br />  
 <% end %>
+<div class="apple_pagination">
+<%= will_paginate @blogs %>
+</div>
 </article>
 
 <aside id="gallside">some content here
    	
-   		<!--if admin-->
-	<%= link_to 'New Post', new_blog_path, :title =>'create new post' %>
+ <!--if admin-->
+	<%= link_to 'New Post', new_blog_path, :title =>'create new post' %>new post
 <!--else nothing-->
 </aside>

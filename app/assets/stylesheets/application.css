@@ -19,5 +19,6 @@
  *= require scaffolds
  *= require normalize    
  *= require variables
- *= require normalize    
+ *= require normalize  
+ *= require pagination   
  */

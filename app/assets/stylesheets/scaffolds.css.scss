@@ -146,12 +146,54 @@ border-image: initial;
 cursor: auto;
 }
 
+aside section h2{
+  padding:5px;
+}
 
+/***************************************************************/
+/*                      About Page                             */
+/***************************************************************/
 
 #aboutpage{
   text-align:justify;
 }
+article#aboutpage section h2{
+  background-color:hsla(300, 80%, 60%, 0.3);
+  height:1.0em;
+  padding: 0.6em 0.3em 0.4em 0.9em;
+  width:10em;
+  @include border-radius(7em);
+  &:hover{
+    background-color:hsla(120, 72%, 40%, 0.3);
+  }
+}
 
+
+/*aside image map */
+.mapping{
+      list-style:none;
+      width:200px;
+      height:200px;
+      li{
+        a{
+          float:left;
+          width:100px;
+          height:100px;
+          display:block; 
+          background-image:url('nav/mapping.gif');
+          text-indent:-10000px;
+        
+          }
+        }
+      }
+.mapping li a.one{background-position: 0 0;}
+.mapping li a:hover.one{background-position: -200px 0;}
+.mapping li a.two{background-position:-100px 0;}
+.mapping li a:hover.two{background-position:-300px 0;}
+.mapping li a.three{background-position:0 -100px;}
+.mapping li a:hover.three{background-position:-200px -100px;}
+.mapping li a.four{background-position:-100px -100px;}
+.mapping li a:hover.four{background-position:-300px -100px;}
 
 
 
