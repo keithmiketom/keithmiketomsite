@@ -6,6 +6,7 @@ body {
 	font-size: 1em;
 	color: #8a8683;
 	background-color:#fff;
+
 }
 img {
 	max-width: 100%;
@@ -165,9 +166,14 @@ a:visited {
 /* Slide 4 */
 
 #slide4{
-	background-image:url('handjob.jpg');
+
+	background-image:url('nav/parasky.gif');
+	background-repeat:repeat;
+	width:3000px;
+	height:500px;
 	background-color:#8a8683;
 	color:#ffffff;
+
 }
 #slide4 h1 {
 	font-size: 3.8em;
@@ -183,10 +189,41 @@ a:visited {
 	padding-bottom:20px;
 	font-weight: 400;
 }
+#slide4 #bckgrnd{
+	background-image:url('nav/bg-city-bg.gif');
+	background-repeat:repeat-x;
+	margin:0 -1000px 0;
+	height:700px;
+	margin-bottom:100px;
+}
+#slide4 #mdlgrnd{
+	background-image:url('nav/bg-city2.gif');
+	background-repeat:repeat-x;
+	height:700px;
+	margin-left:-30px;
+	margin-bottom:100px;
+}
+#slide4 #forgrnd{
+	background-image:url('nav/frgd-city.gif');
+	background-repeat:repeat-x;
+	height:700px;
+	margin-left:-20px;
+	position:relative;
+	top:140px;
 
+}
+#slide4 p{
+	width:50%;
 
+}
 
-
+#slide5{
+	border-top:20px solid magenta;
+	border-left:10px solid magenta;
+	background-color:#105CB6;
+	margin-top:176px;
+	margin-bottom: -140px;
+}
 
 /* Tablet */
 @media screen and (max-width: 1024px) {
@@ -498,3 +535,5 @@ div#gallery{
 #gallery .rm_controls a.rm_pause{
 	background:transparent url(../images/navs/pause.png) no-repeat center left;
 }
+
+

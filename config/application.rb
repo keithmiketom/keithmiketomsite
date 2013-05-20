@@ -14,7 +14,19 @@ module Keithmiketom3
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
-
+    config.action_mailer.smtp_settings = {
+      :address              => "smtp.keithmiketom.com",
+      :port                 => 587,
+      :domain               => "keithmiketom.com",
+      :user_name            => "info@keithmiketom.com",
+      :password             => "Transform28",
+      :authentication       => :plain,
+      :enable_starttls_auto => true
+    }
+    
+    config.action_mailer.default_url_options = {
+      :host => "keithmiketom.com"
+    }
     # Custom directories with classes and modules you want to be autoloadable.
     # config.autoload_paths += %W(#{config.root}/extras)
 

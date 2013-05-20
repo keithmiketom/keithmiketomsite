@@ -1,6 +1,7 @@
 Keithmiketom3::Application.routes.draw do
 
-  devise_for :users
+
+  #mount Mercury::Engine => '/'
 
   resources :comments
   resources :illustrations
@@ -9,18 +10,13 @@ Keithmiketom3::Application.routes.draw do
   resources :welcomes
 
 
-  ActiveAdmin.routes(self)
-
-  devise_for :admin_users, ActiveAdmin::Devise.config
-
   resources :contacts
 
   resources :galleries
 
-  resources :blogs do
-  
-    resources :comments, :only => [:create, :new, :update, :destroy]
-   end
+       resources :blogs do
+          resources :comments, :only => [:create, :new, :update, :destroy]
+        end
 
 
   # The priority is based upon order of creation:
@@ -31,7 +27,8 @@ Keithmiketom3::Application.routes.draw do
   # Keep in mind you can assign values other than :controller and :action
     match 'about' => 'welcomes#about'
   
-    match 'contact' => 'welcomes#contact'
+    match 'contact' => 'welcomes#contact', :as => 'contact', :via => :get
+    match 'contact' => 'welcomes#create', :as => 'contact', :via => :post
     
 
     

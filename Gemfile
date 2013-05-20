@@ -11,13 +11,12 @@ group :production do
 end
 
 #added Gems
-
+gem 'mercury-rails'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'will_paginate', '~> 3.0'
 gem 'devise'
 gem "rails-boilerplate"
-gem 'activeadmin'
 gem "paperclip", "~> 3.0"
 
 
