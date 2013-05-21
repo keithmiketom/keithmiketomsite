@@ -30,5 +30,12 @@
 		</div>
 	
 	<% end %>
-<%= link_to 'New Gallery', new_gallery_path %>
+
 </aside><!--end of add_gal-->
+<section class="admin_panel">
+<%= link_to 'New Gallery', new_gallery_path %>
+</section>
+<%= javascript_include_tag "jquery-ui-1.10.2.custom.min" %>
+<script>
+	$('#gallside').accordion();
+</script>

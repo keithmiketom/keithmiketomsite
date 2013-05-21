@@ -1,4 +1,5 @@
-<h1>Blogs</h1>
+<div id="blog">
+	<h1>Blogs</h1>
 <article id="divbox">
 <p class="intro">This is a journal of my work processes in Web Design, Web Development, Illustration and Art &amp; Design. It chronicles work I am developing at the moment
 	in both these areas of practice.
@@ -14,7 +15,7 @@
     		<br />
     		on <%= blog.date.strftime('%d/%m/%Y %H:%M') %></span>
    	<article>
-	   <p> <%= image_tag(blog.image_url, :alt => blog.image_url)%>
+	   <p> <%= image_tag(blog.image_url, :alt => blog.image_url, :width => "150px", :height => "150px" )%>
 	     
 	    <%= raw(truncate(h(blog.content), :length =>200, :separator => ' ', :omission =>link_to("...Read More", blog))) %></p>
     </article>
@@ -27,9 +28,17 @@
 </div>
 </article>
 
-<aside id="gallside">some content here
+<aside id="gallside">
+	<section>		
+		<h2>Twitter Feed:</h2>
+		<a class="twitter-timeline" width="300px" href="https://twitter.com/keithmiketom" data-widget-id="336594876907008000">Tweets by @keithmiketom</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+	</section>
+	some content here
    	
  <!--if admin-->
 	<%= link_to 'New Post', new_blog_path, :title =>'create new post' %>new post
 <!--else nothing-->
 </aside>
+</div>

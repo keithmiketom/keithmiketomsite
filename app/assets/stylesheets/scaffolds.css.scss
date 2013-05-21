@@ -64,8 +64,9 @@ footer {
     margin-right:4em;
     li{color:white;
   a{
+    &:link, &:active, &:visited{
     color:#fff;
-    text-decoration:none;
+    text-decoration:none;}
     &:hover{
       color:darken(white, 20%);
       text-decoration:underline;
@@ -96,7 +97,7 @@ div.push {
 article#contact {
     .left{
       float:left;
-      width:40%;
+      width:60%;
       }
     }
     .right{
@@ -176,6 +177,7 @@ article#aboutpage section h2{
       height:200px;
       li{
         a{
+          padding:0;
           float:left;
           width:100px;
           height:100px;
@@ -194,6 +196,49 @@ article#aboutpage section h2{
 .mapping li a:hover.three{background-position:-200px -100px;}
 .mapping li a.four{background-position:-100px -100px;}
 .mapping li a:hover.four{background-position:-300px -100px;}
+
+
+/***************************************************************/
+/*                      Contact Page                           */
+/***************************************************************/
+#contact{
+  dt{
+    width:80%;
+    padding:0.3em 0.3em 0.3em 2.5em;
+    background-color:lighten($bl-col, 40%);
+    @include border-radius(10px);
+    color:red;
+    font-size:1.2em;
+    
+  }
+  dd{
+    font-family:sans-serif;
+    font-size:0.9em;
+
+    }
+
+}
+dd.date:before{
+  content:"Date: ";
+  margin-left:-35px;
+  font-weight:bold;
+}
+dd.location:before{
+  content:"Location: ";
+  margin-left:-64px;
+  font-weight:bold;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

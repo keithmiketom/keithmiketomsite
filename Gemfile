@@ -20,6 +20,7 @@ gem "rails-boilerplate"
 gem "paperclip", "~> 3.0"
 
 
+
 gem 'pg', '0.12.2'
  #forms and stuffs
 gem 'simple_form'

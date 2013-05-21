@@ -15,11 +15,11 @@ module Keithmiketom3
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
     config.action_mailer.smtp_settings = {
-      :address              => "smtp.keithmiketom.com",
+      :address              => "smtp.gmail.com",
       :port                 => 587,
       :domain               => "keithmiketom.com",
-      :user_name            => "info@keithmiketom.com",
-      :password             => "Transform28",
+      :user_name            => "keithmiketom@gmail.com",
+      :password             => "teamrocket17041983",
       :authentication       => :plain,
       :enable_starttls_auto => true
     }

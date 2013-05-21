@@ -4,7 +4,7 @@ class BlogsController < ApplicationController
   def index
     @blogs = Blog.all
     @title = "Art Blog"
-    @blogs = Blog.order('id DESC')
+    @blogs = Blog.order('date DESC')
     @blogs = @blogs.paginate(:page => params[:page], :per_page => 5)
 
     respond_to do |format|

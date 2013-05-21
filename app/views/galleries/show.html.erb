@@ -1,4 +1,13 @@
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <p id="notice"><%= notice %></p>
+<div id="fb-root"></div>
+
 <!--this shows individual gallery contents-->
 <div class="main">
 	<h1><%= @gallery.caption %></h1>
@@ -9,11 +18,13 @@
 		<% @gallery.illustrations.each do |illustration| %>
 		
 		<div class="thumb">
-			<a href="<%= illustration.image %>" rel="lightbox[<%= @gallery.caption %>]">
+			<a href="<%= illustration.image %>" rel="lightbox[<%= @gallery.caption %>]" title="<%= illustration.caption %>">
 				<img src="<%= illustration.image %>"  width="150px" alt="thumbnail" />
 			</a>
 			<p>
 			<span><%= illustration.caption%></span><br />
+			
+			<br />
 		    <span><%= link_to 'Destroy', illustration, method: :delete, data: { confirm: 'Are you sure?' } %></span>
 		    </p>
 		</div>
@@ -21,20 +32,23 @@
 		<% end %>
 	</div>
 	
-	<div class="sbar">
-		<p>For Admin this is an image uploader</p>
-		<p><%= render "illustrations/form"%></p>	
-	</div>
 	<aside class="detailbox clearfix">
+		<div class="descript">
 		<h3><%= @title %></h3>
 		<p><%= @gallery.description %></p>
+		<p><a href="https://twitter.com/share" class="twitter-share-button" data-via="keithmiketom">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>
+		<div class="fb-like" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false"></div>
 		<br />
-		<br />
-		<br />
+		</div>
 		<!--admin only-->
 		<!--Image uploader-->
 			<div class="gal_admin clearfix">
-				
+				<div class="sbar">
+					<h2>Admin</h2>
+					<p>Image Uploader</p>
+					<p><%= render "illustrations/form"%></p>	
+				</div>
 				
     			<%= link_to 'Back', galleries_path %>
 				<%= link_to 'Edit', edit_gallery_path(@gallery) %> 
@@ -42,5 +56,6 @@
 			</div>
 	</aside><!--image uploader for admin should go here-->
 </div>
+	  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
-
+<%= javascript_include_tag "lightbox"%>

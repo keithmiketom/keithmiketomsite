@@ -100,10 +100,26 @@ aside#gallside{
   min-height:200px;
 }
 .main aside.detailbox{
-  width:72%;
-  float:left;
-  margin:10px auto 0;
-}
+      width:78%;
+      float:left;
+      margin:10px auto 0;
+          .descript{
+              width:45%;
+              float:left;
+               }
+          .sbar{
+            clear:both;
+            float:right;
+            width:250px;
+            form{
+              color:black;
+                  input#illustration_caption{
+                  width:12em;
+                  @include border-radius(20px);
+                  }
+                }
+            }
+        }
 div.thumb{
   float:left;
   margin:5px;
@@ -115,3 +131,4 @@ div.thumb{
  
   }
 }
+

@@ -107,20 +107,23 @@
 .lb-next {
   right: 0;
   float: right;
+  content: "next";
 }
 
 /* line 81, ../sass/lightbox.sass */
 .lb-prev:hover {
-  background: url(../images/prev.png) left 48% no-repeat;
+  background: url('/assets/prev.png') left 48% no-repeat;
 }
 
 /* line 85, ../sass/lightbox.sass */
 .lb-next:hover {
-  background: url(../images/next.png) right 48% no-repeat;
+  background: url('/assets/next.png') right 48% no-repeat;
+  
 }
 
 /* line 88, ../sass/lightbox.sass */
 .lb-dataContainer {
+  background-color:hsla(260, 20%, 55%, 0.8);
   margin: 0 auto;
   padding-top: 5px;
   *zoom: 1;

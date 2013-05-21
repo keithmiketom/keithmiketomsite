@@ -1,49 +1,22 @@
 <article id="contact">
 			 <div class="left">
-                       <h1>Let's Play a Game</h1>
-                        <div id="game">
-      <div id="select" onclick="selectClick(event);">
-        <div style="background-color: red;width:300px; height:300px;">
-        	<%= image_tag "game/snake/star.gif", alt:"image2", id:"star0", class:"star"%>
-			<%= image_tag "game/snake/star.gif", alt:"image3", id:"star1", class:"star" %>
-			<%= image_tag "game/snake/star.gif", alt:"image4", id:"star2", class:"star" %>
-			<%= image_tag "game/snake/star.gif", alt:"image4", id:"star3", class:"star" %>
-			<%= image_tag "game/snake/star.gif", alt:"image1", id:"star4", class:"star" %>
-         	<%= image_tag "game/snake/star.gif", alt:"image2", id:"star7", class:"star"%>
-			<%= image_tag "game/snake/star.gif", alt:"image3", id:"star9", class:"star" %>
-			<%= image_tag "game/snake/star.gif", alt:"image4", id:"star13", class:"star" %>
-			<%= image_tag "game/snake/star.gif", alt:"image4", id:"star8", class:"star" %>
-			<%= image_tag "game/snake/star.gif", alt:"image1", id:"star5", class:"star"  %>
-        	<%= image_tag "game/snake/star.gif", alt:"image2", id:"star6", class:"star" %>
-			<%= image_tag "game/snake/star.gif", alt:"image3", id:"star10", class:"star"%>
-			<%= image_tag "game/snake/star.gif", alt:"image4", id:"star11", class:"star"%>
-			<%= image_tag "game/snake/star.gif", alt:"image4", id:"star12", class:"star" %>
-          <div id="nyancat">
-            <div>
-              <img src="images/cat.gif" /><br/>
-              Click here to play Grumpy Caterpillar!            
-              </div>
-          </div>
-         
-        </div>
-      </div>
-      <audio id="cat-music" preload="auto">
-        <source src="sounds/song.ogg" type="audio/ogg" />
-        <source src="sounds/song.mp3" type="audio/mp3" />
-      </audio>
-      <audio id="tac-music" preload="auto">
-        <source src="sounds/tacsong.ogg" type="audio/ogg" />
-        <source src="sounds/tacsong.mp3" type="audio/mp3" />
-      </audio>
-      <canvas id="canvas" width="600" height="600">
-      	
-      	..
-      </canvas>
-    </div></div>
+                <h1>Exhibition History</h1>
+                   <div id="exhibit"><!--cound be updated to a calendar in an updated version-->
+                   		<dl>
+                   			<dt>Arty Party</dt>
+                   				<dd class="date">13<sup>th</sup> June 2009</dd>
+                   				<dd class="location">The Backloft Gallery<br />St Augustines St. Dublin 8</dd>
+                   			<dt>NCAD Degree Show</dt>
+                   				<dd class="date">June 2006</dd>
+                   				<dd class="location">NCAD 100 Thomas St. Dublin 8</dd>
+                   			
+                   		</dl>
+                   </div>
+     </div>
                      
 </article>
 <aside class="right">
-     <form  method="post" autocomplete="on"> 
+     <form  action="" method="post" autocomplete="on"> 
      <h1> Contact Me </h1> 
         <p> 
            <label for="firstname" class="fname" >First Name</label><br />
@@ -54,11 +27,11 @@
           <input id="lastname" name="lastname" required="required" type="text" placeholder="Name" />
        </p>
        <p> 
-          <label for="email" class="youmail" >Email</label><br />
+          <label for="email" class="youmail">Email</label><br />
           <input id="email" name="email" required="required" type="email" placeholder="mymail@mymail.com"/> 
        </p>
        <p> 
-          <label for="comments" class="comments">Queries </label><br />
+          <label for="comments" class="comment">Queries</label><br />
           <textarea id="comments" name="comments" required="required" >Your Comments Here
           </textarea>
        </p>
