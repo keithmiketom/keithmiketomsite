@@ -28,10 +28,13 @@
     <%= f.datetime_select :date %>
   </div>
   <div class="field">
-    <%= f.label :image_url %><br />
-    <%= f.text_field :image_url %>
+   	 <%= f.label "Post Type" %><br />
+     <%= f.select :image_url, [["Art","blog_img/art.gif"],["Development", "blog_img/code.png"],["Design", "blog_img/design.png"],["Site News", "blog_img/site.gif"]] %>
+
   </div>
+  <br />
   <div class="actions">
+  	
     <%= f.submit 'Submit Post' %>
   </div>
 <% end %>

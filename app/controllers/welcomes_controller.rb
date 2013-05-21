@@ -18,7 +18,7 @@ class WelcomesController < ApplicationController
     @message = Message.new
   end
 
-  def contact
+  def create
     @message = Message.new(params[:message])
     
     if @message.valid?
