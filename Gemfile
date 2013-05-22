@@ -15,10 +15,9 @@ gem 'mercury-rails'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'will_paginate', '~> 3.0'
-gem 'devise'
 gem "rails-boilerplate"
 gem "paperclip", "~> 3.0"
-
+gem "devise"
 
 
 gem 'pg', '0.12.2'

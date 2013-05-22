@@ -32,9 +32,11 @@
 	<% end %>
 
 </aside><!--end of add_gal-->
+<% if current_user && current_user.id == 1 %>
 <section class="admin_panel">
 <%= link_to 'New Gallery', new_gallery_path %>
 </section>
+<% end %>
 <%= javascript_include_tag "jquery-ui-1.10.2.custom.min" %>
 <script>
 	$('#gallside').accordion();

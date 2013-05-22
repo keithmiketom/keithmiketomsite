@@ -344,6 +344,7 @@ div#gallery{
 	color:#ffffff;
 	z-index:2;
 	overflow:auto;
+	margin-right:20px;
 
 
 }
@@ -362,8 +363,19 @@ div#gallery{
 	line-height: 0px;
 	padding-bottom:20px;
 	font-weight: 400;
-		position:relative;
+	position:absolute;
+	top:20px;
+	left:45px;
 	z-index:900;
+	
+}
+#slide4 p{
+	width:50%;
+	position:absolute;
+	z-index:900;
+	top:50px;
+	left:50px;
+
 }
 #slide4 #sky{
 	background-image:url('nav/parasky.gif');
@@ -374,7 +386,8 @@ div#gallery{
 	position:absolute;
 	top:0;
 	left:0;
-	bottom:50px;;
+	right:0;
+	bottom:50px;
 	z-index:1;
 }
 #slide4 #bckgrnd{
@@ -410,14 +423,7 @@ div#gallery{
 	overflow:auto;
 
 }
-#slide4 p{
-	width:50%;
-	position:absolute;
-	z-index:900;
-	top:20px;
-	left:50px;
 
-}
 /* Slide 5 */
 
 #slide5{

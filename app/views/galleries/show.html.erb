@@ -25,7 +25,9 @@
 			<span><%= illustration.caption%></span><br />
 			
 			<br />
+			<% if current_user && current_user.id == 1 %>
 		    <span><%= link_to 'Destroy', illustration, method: :delete, data: { confirm: 'Are you sure?' } %></span>
+		    <% end %>
 		    </p>
 		</div>
 		
@@ -45,6 +47,7 @@
 		<!--Image uploader-->
 			<div class="gal_admin clearfix">
 				<div class="sbar">
+			<% if current_user && current_user.id == 1 %>	
 					<h2>Admin</h2>
 					<p>Image Uploader</p>
 					<p><%= render "illustrations/form"%></p>	
@@ -53,6 +56,7 @@
     			<%= link_to 'Back', galleries_path %>
 				<%= link_to 'Edit', edit_gallery_path(@gallery) %> 
 				<%= link_to 'Destroy', @gallery, method: :delete, data: { confirm: 'Are you sure?' } %>
+			<% end %>
 			</div>
 	</aside><!--image uploader for admin should go here-->
 </div>

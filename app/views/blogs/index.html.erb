@@ -38,7 +38,11 @@
 	some content here
    	
  <!--if admin-->
-	<%= link_to 'New Post', new_blog_path, :title =>'create new post' %>new post
+ <% if current_user && current_user.id == 1 %>
+	<%= link_to 'New Post', new_blog_path, :title =>'create new post' %>
+<%else %>
+<span>hello</span>
+<% end %>
 <!--else nothing-->
 </aside>
 </div>

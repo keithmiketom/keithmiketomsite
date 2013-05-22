@@ -23,6 +23,9 @@
 			<h2>Design</h2><!-- link to design site-->
 			<p>I also design illustraions and websites. You can check out my design site by clicking the heading.</p>
 		</div>
+		<% if current_user %>
+			<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+		<% end %>
 	</section>
 	
 </article>
