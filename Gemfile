@@ -18,6 +18,9 @@ gem 'will_paginate', '~> 3.0'
 gem "rails-boilerplate"
 gem "paperclip", "~> 3.0"
 gem "devise"
+gem 'contact_us', '~> 0.4.0'
+gem 'formtastic'
+gem 'alertify-rails'
 
 
 gem 'pg', '0.12.2'

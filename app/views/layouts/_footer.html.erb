@@ -1,5 +1,10 @@
 <footer class="footer-container clearfix">
 	<span>Copyright &copy; 2004 - <%=Date.today.year%></span>
+	<span>	
+		<% if current_user %>
+			<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+		<% end %>
+	</span>
 	<ul>
 		<li><a href="http://www.facebook.com/keithmiketom" title="Facebook link" target="_blank">Facebook</a></li>
 		<li><a href="http://www.twitter.com/keithmiketom" title="Twitter link" target="_blank">Twitter</a></li>

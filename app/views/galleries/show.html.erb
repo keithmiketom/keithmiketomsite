@@ -18,8 +18,8 @@
 		<% @gallery.illustrations.each do |illustration| %>
 		
 		<div class="thumb">
-			<a href="<%= illustration.image %>" rel="lightbox[<%= @gallery.caption %>]" title="<%= illustration.caption %>">
-				<img src="<%= illustration.image %>"  width="150px" alt="thumbnail" />
+			<a href="<%= illustration.image %>" rel="lightbox[<%= @gallery.caption %>]" title="<%= illustration.caption %>" >
+				<img src="<%= illustration.image %>"  width="150px" alt="thumbnail" class="thumbnail"/>
 			</a>
 			<p>
 			<span><%= illustration.caption%></span><br />
@@ -55,7 +55,7 @@
 				
     			<%= link_to 'Back', galleries_path %>
 				<%= link_to 'Edit', edit_gallery_path(@gallery) %> 
-				<%= link_to 'Destroy', @gallery, method: :delete, data: { confirm: 'Are you sure?' } %>
+				<%= link_to 'Destroy', @gallery, method: :delete, data: { confirm: 'Are you sure?'} %>
 			<% end %>
 			</div>
 	</aside><!--image uploader for admin should go here-->
@@ -63,3 +63,6 @@
 	  	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 <%= javascript_include_tag "lightbox"%>
+
+
+

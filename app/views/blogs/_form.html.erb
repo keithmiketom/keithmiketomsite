@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :author %><br />
-    <%= f.select :author, current_user.username  %>
+    <%= f.select :author, [[ current_user.username, current_user.username], ["Guest Author", "Guest"],["Moderator", "Keith"]]  %>
   </div>
   <div class="field">
     <%= f.label :content %><br />

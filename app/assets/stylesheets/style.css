@@ -152,11 +152,11 @@ div#gallery{
 	opacity:1.0;
 }
 #gallery .rm_nav a.rm_next{
-	background:transparent url(../images/navs/next.png) no-repeat top left;
+	background:transparent url('/assets/gallery/next.png') no-repeat top left;
 	right:0px;
 }
 #gallery .rm_nav a.rm_prev{
-	background:transparent url(../images/navs/prev.png) no-repeat top left;
+	background:transparent url('/assets/gallery/prev.png') no-repeat top left;
 	left:0px;
 }
 #gallery .rm_controls{
@@ -180,10 +180,10 @@ div#gallery{
 }
 #gallery .rm_controls a.rm_play{
 	display:none;
-	background:transparent url(../images/navs/play.png) no-repeat center left;
+	background:transparent url('/assets/gallery/play.png') no-repeat center left;
 }
 #gallery .rm_controls a.rm_pause{
-	background:transparent url(../images/navs/pause.png) no-repeat center left;
+	background:transparent url('/assets/gallery/pause.png') no-repeat center left;
 }
 
 
@@ -248,11 +248,14 @@ div#gallery{
 
 #slide1{
 	background-color:#ffffff;
-	margin-top:40px;
+	
 }
 #slide1 p{
 	margin-left:20px;
 	text-align:justify;
+	
+}
+	
 }
 #slide1 h1 {
 	font-size: 3.8em;
@@ -260,12 +263,12 @@ div#gallery{
 	line-height: 0px;
 	color:#8a8683;
 	font-weight: 700;
+	background-color:hsla(240, 100%, 100% 0.8);
 }
 #slide1 h2 {
 	font-size: 2em;
 	color: #8a8683;
 	line-height: 0px;
-	padding-bottom:20px;
 	font-weight: 400;
 }
 
@@ -308,6 +311,7 @@ div#gallery{
 
 #slide3{
 	background-color:#ffffff;
+	height:400px;
 }
 #slide3 h1 {
 	font-size: 3.8em;
@@ -345,6 +349,7 @@ div#gallery{
 	z-index:2;
 	overflow:auto;
 	margin-right:20px;
+	margin-top:40px;
 
 
 }
@@ -394,7 +399,7 @@ div#gallery{
 	background-image:url('nav/bg-city-bg.gif');
 	background-repeat:repeat-x;
 	margin:0 -1000px 0;
-	width:4000px;
+	width:4500px;
 	height:700px;
 	position:absolute;
 	bottom:0;
@@ -404,7 +409,7 @@ div#gallery{
 #slide4 #mdlgrnd{
 	background-image:url('nav/bg-city2.gif');
 	background-repeat:repeat-x;
-	width:4000px;
+	width:5000px;
 	height:700px;
 	margin-left:-30px;
 	position:absolute;
@@ -415,7 +420,7 @@ div#gallery{
 #slide4 #forgrnd{
 	background-image:url('nav/frgd-city.gif');
 	background-repeat:repeat-x;
-	width:4000px;
+	width:6000px;
 	height:500px;
 	position:absolute;
 	bottom:0;
@@ -449,7 +454,9 @@ div#gallery{
 }
 
 /* Slide 6 */
-#slide6{}
+#slide6{
+	background-color:hsl(240, 50%, 50%);
+}
 #slide6 h1 {
 	font-size: 3.8em;
 	letter-spacing: -3px;

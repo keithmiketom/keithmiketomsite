@@ -11,6 +11,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   def store_dir
     'uploads/illustrations/'
   end
+
   
   def filename 
     if original_filename 

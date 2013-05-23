@@ -4,23 +4,17 @@ Keithmiketom3::Application.routes.draw do
     devise_scope :users do
       get "sign_out", :to => "devise/sessions#destroy"
     end
+ 
 
   #mount Mercury::Engine => '/'
 
-  resources :comments
   resources :illustrations
-
 
   resources :welcomes
 
-
-  resources :contacts
-
   resources :galleries
 
-       resources :blogs do
-          resources :comments, :only => [:create, :new, :update, :destroy]
-        end
+  resources :blogs 
 
 
   # The priority is based upon order of creation:
@@ -33,7 +27,8 @@ Keithmiketom3::Application.routes.draw do
   
     match 'contact' => 'welcomes#contact', :as => 'contact', :via => :get
     match 'contact' => 'welcomes#create', :as => 'contact', :via => :post
-    
+    match 'blog' => 'blogs#index'
+    match 'art' => 'galleries#index'
 
     
 

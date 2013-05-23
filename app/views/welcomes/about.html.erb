@@ -19,13 +19,25 @@
 				<!-- link to dart page-->
 		</div>
 		<div><!-- gallery style bulding with css slider of some art samples--></div>
-		<div class="brokenbuilding design">
+		<div class="design">
 			<h2>Design</h2><!-- link to design site-->
 			<p>I also design illustraions and websites. You can check out my design site by clicking the heading.</p>
 		</div>
-		<% if current_user %>
-			<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-		<% end %>
+		<div>
+		<h2>Influences:</h2>
+			<dl>
+				<dt>Art</dt>
+					<dd>Robert Ballagh</dd>
+					<dd>Andy Warhol</dd>
+					<dd>William Blake</dd>
+					<dd>Basquait</dd>
+					<dd>Tracy Emin</dd>
+				<dt>Design</dt>
+					<dd>Paul Rand</dd>
+					<dd>Milton Glaser</dd>
+			</dl>
+	</div>
+	
 	</section>
 	
 </article>
@@ -50,8 +62,6 @@
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 	</section>
-	<section>
-		<h2>Influences:</h2>
-	</section>
+	
 	
 </aside>
