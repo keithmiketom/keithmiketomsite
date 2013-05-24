@@ -1,0 +1,14 @@
+<h1>Send me <br />an E-mail</h1>
+<article id="contact">
+<%= simple_form_for @contact_form do |f|%>
+	<h4>Add Your Contact Details</h4>
+   <%= f.input :name, :required => true %><br />
+    <%= f.input :email, :required => true %>
+    <br />
+    <h4>Add Your Message/Enquiry</h4>
+    <%= f.input :message, :as => :text, :required => true, :input_html => { :cols => 50, :rows => 5 }%>
+      <br />  <br />
+   <%= f.button :submit, 'Send message'%>
+ 
+   <% end %>
+</article>

@@ -21,6 +21,7 @@ gem "devise"
 gem 'contact_us', '~> 0.4.0'
 gem 'formtastic'
 gem 'alertify-rails'
+gem 'mail_form'
 
 
 gem 'pg', '0.12.2'

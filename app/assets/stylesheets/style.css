@@ -37,8 +37,11 @@ div#gallery{
 
 }
 #gallery a{
-	color:#000;
 	text-decoration:none;
+	cursor:pointer;	
+}
+#gallery a:hover{
+	color:black;
 }
 #gallery h1{
 	padding:10px;
@@ -52,7 +55,7 @@ div#gallery{
 	width:1160px;
 	margin:0 0 0 -4.5em ;
 	position:relative;
-	background-color:red;
+	background-color:#f0f0f0;
 	border:30px thin magenta;
 	border-radius: 20px;
             -moz-border-radius: 20px;
@@ -62,7 +65,7 @@ div#gallery{
 	
 }
 #gallery .rm_container{
-	width:1150px;
+	width:1050px;
 	overflow:hidden;
 	position:relative;
 	height:530px;
@@ -310,10 +313,12 @@ div#gallery{
 /* Slide 3 */ 
 
 #slide3{
-	background-color:#ffffff;
+	background-color:#f0f0f0;
 	height:400px;
 }
 #slide3 h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
 	font-size: 3.8em;
 	letter-spacing: -3px;
 	line-height: 0px;

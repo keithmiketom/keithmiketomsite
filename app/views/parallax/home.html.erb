@@ -39,8 +39,10 @@
 					</div>
 				</div>
 				<div id="decorative" class="grid_5 omega">
-					<%=image_tag "raybee.gif", :class => "drag" %>
-					<%=image_tag "nav/city_over.gif"%>
+					<%=image_tag "bee.png", :class => "drag" %>
+					<%=image_tag "bee.png", :class => "drag" %>
+					<%=image_tag "bee.png", :class => "drag" %>
+					
 				</div>
 			</div>
 		</div>
@@ -58,13 +60,14 @@
 				<div id="content" class="grid_12">
 					<div id="gallery" class="content">
 						<h2><%= link_to 'Artwork', galleries_path, :title => 'Art Gallery Link'%></h2>
+						<hr />
 							<div class="rm_wrapper">
 								<div id="rm_container" class="rm_container">
 									<ul>
-										<li data-images="rm_container_1" data-rotation="-15"><%= image_tag "degreeshow/odetoceram.gif", alt:"image1" %></li>
+										<li data-images="rm_container_1" data-rotation="-15"><%= image_tag "degreeshow/Ceramic.jpg", alt:"image1" %></li>
 										<li data-images="rm_container_2" data-rotation="-5"><%= image_tag "catswithraybees/goldneko.jpg", alt:"image2" %></li>
-										<li data-images="rm_container_3" data-rotation="5"><%= image_tag "degreeshow/odetoceram.gif", alt:"image1" %></li>
-										<li data-images="rm_container_4" data-rotation="15"><%= image_tag "degreeshow/odetoceram.gif", alt:"image1" %></li>
+										<li data-images="rm_container_3" data-rotation="5"><%= image_tag "illustration/army.jpg", alt:"image1" %></li>
+										<li data-images="rm_container_4" data-rotation="15"><%= image_tag "catswithraybees/cheep.jpg", alt:"image1" %></li>
 									</ul>
 									<div id="rm_mask_left" class="rm_mask_left"></div>
 									<div id="rm_mask_right" class="rm_mask_right"></div>
@@ -72,33 +75,35 @@
 									<div id="rm_corner_right" class="rm_corner_right"></div>
 								<h2>Artwork</h2>
 									<div style="display:none;">
-										<div id="rm_container_1">
-											<%= image_tag "degreeshow/odetodorris.gif", alt:"image2" %>
-											<%= image_tag "degreeshow/odetoindiff.gif", alt:"image3" %>
-											<%= image_tag "degreeshow/odetonost.gif", alt:"image4" %>
-											<%= image_tag "degreeshow/odetosweetest.gif", alt:"image4" %>
-											<%= image_tag "degreeshow/odetoceram.gif", alt:"image1" %>
+										<div id="rm_container_1"><!--degree show-->
+											<%= image_tag "degreeshow/dorris.jpg", alt:"image2" %>
+											<%= image_tag "degreeshow/indifference.jpg", alt:"image3" %>
+											<%= image_tag "degreeshow/Nostalgic.jpg", alt:"image4" %>
+											<%= image_tag "degreeshow/Sweet.jpg", alt:"image4" %>
+											<%= image_tag "degreeshow/Ceramic.jpg", alt:"image1" %>
+											
 										</div>
-										<div id="rm_container_2">
+										<div id="rm_container_2"><!--raybees-->
 											<%= image_tag "catswithraybees/Boobee.jpg", alt:"image2" %>
 											<%= image_tag "catswithraybees/spacebbees.jpg", alt:"image3" %>
 											<%= image_tag "catswithraybees/tim-curry.jpg", alt:"image4" %>
-											<%= image_tag "catswithraybees/sr-wendy.jpg", alt:"image4" %>
+											<%= image_tag "catswithraybees/sr-wendy.jpg", alt:"image4", width:"350px" %>
 											<%= image_tag "catswithraybees/goldneko.jpg", alt:"image1" %>
+										
 										</div>
-										<div id="rm_container_3">
-											<%= image_tag "catswithraybees/Boobee.jpg", alt:"image2" %>
-											<%= image_tag "catswithraybees/spacebbees.jpg", alt:"image3" %>
-											<%= image_tag "catswithraybees/tim-curry.jpg", alt:"image4" %>
-											<%= image_tag "catswithraybees/sr-wendy.jpg", alt:"image4" %>
-											<%= image_tag "catswithraybees/goldneko.jpg", alt:"image1" %>
+										<div id="rm_container_3"><!--illustration Art-->
+											<%= image_tag "illustration/Admit.jpg", alt:"image2" %>
+											<%= image_tag "illustration/handjob.jpg", alt:"image3" %>
+											<%= image_tag "illustration/paris.jpg", alt:"image4" %>
+											<%= image_tag "illustration/bichonfrizz.jpg", alt:"image4" %>
+											<%= image_tag "illustration/army.jpg", alt:"image1" %>
 										</div>
-										<div id="rm_container_4">
-											<%= image_tag "catswithraybees/Boobee.jpg", alt:"image2" %>
-											<%= image_tag "catswithraybees/spacebbees.jpg", alt:"image3" %>
-											<%= image_tag "catswithraybees/tim-curry.jpg", alt:"image4" %>
-											<%= image_tag "catswithraybees/sr-wendy.jpg", alt:"image4" %>
-											<%= image_tag "catswithraybees/goldneko.jpg", alt:"image1" %>
+										<div id="rm_container_4"><!--degree show-->
+											<%= image_tag "catswithraybees/quenb.jpg", alt:"image2" %>
+											<%= image_tag "catswithraybees/ray.jpg", alt:"image3" %>
+											<%= image_tag "catswithraybees/vag.jpg", alt:"image4" %>
+											<%= image_tag "catswithraybees/ray.jpg", alt:"image4" %>
+											<%= image_tag "catswithraybees/cheep.jpg", alt:"image1" %>
 										</div>
 									</div>
 								</div>
@@ -114,6 +119,7 @@
 						</div>
 				</div>
 			</div>
+		</div>
 		</div>
 		<div class="slide" id="slide6" data-slide="6" data-stellar-background-ratio="0.9">
 			<div class="container clearfix">

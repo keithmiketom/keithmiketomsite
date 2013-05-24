@@ -1,11 +1,15 @@
 Keithmiketom3::Application.routes.draw do
 
+  get "contact_form/new"
+
+  get "contact_form/create"
+
   devise_for :users
     devise_scope :users do
       get "sign_out", :to => "devise/sessions#destroy"
     end
  
-
+  resources :contact_forms
   #mount Mercury::Engine => '/'
 
   resources :illustrations
@@ -15,6 +19,7 @@ Keithmiketom3::Application.routes.draw do
   resources :galleries
 
   resources :blogs 
+  
 
 
   # The priority is based upon order of creation:
@@ -25,8 +30,8 @@ Keithmiketom3::Application.routes.draw do
   # Keep in mind you can assign values other than :controller and :action
     match 'about' => 'welcomes#about'
   
-    match 'contact' => 'welcomes#contact', :as => 'contact', :via => :get
-    match 'contact' => 'welcomes#create', :as => 'contact', :via => :post
+    match 'contact' => 'contact_forms#index'
+    match 'contactme' => 'contact_forms#new'
     match 'blog' => 'blogs#index'
     match 'art' => 'galleries#index'
 
