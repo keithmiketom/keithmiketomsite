@@ -174,8 +174,8 @@ dd.location:before{
   font-weight:bold;
 }
 a.button{
-  background-color:$or-col;
-  padding:6px;
+  background-color:lighten($or-col, 30%);
+  padding:6px 10px;
   @include border-radius(10px);
   &:hover{
     background-color:#fff;
@@ -221,9 +221,9 @@ article#contact form{
     
 input.button{
   @include border-radius(30px);
-  background-color:hsl(250, 60%, 80%);
+  background-color:hsla(250, 60%, 80%, 0.6);
   font-family:'Novecentowide-Light';
-  padding:3px 7px;
+  padding:7px 7px;
   &:hover{
     background-color:#fff;
     color:hsl(250, 60%, 80%);
@@ -262,16 +262,12 @@ aside section h2{
   padding:5px;
 }
 
-#modal-confirm{
-  border:10px solid magenta;
+.header-container .drag{
+  position:absolute;
+  z-index:1000000;
+  top:30px;
+  right:50px;
 }
-
-
-
-
-
-
-
 
 
 

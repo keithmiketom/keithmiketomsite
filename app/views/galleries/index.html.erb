@@ -8,7 +8,7 @@
 <article id="divbox">
 <% @galleries.each do |gallery| %>
 <div class="gal_thumb">
-	<%= link_to image_tag(gallery.image_url, :alt => gallery.caption, :id => gallery.caption.gsub(/\s+/, "").downcase), gallery, :title =>gallery.caption %><!--thumbnail-->
+	<%= link_to image_tag(gallery.image, :alt => gallery.caption, :id => gallery.caption.gsub(/\s+/, "").downcase), gallery, :title =>gallery.caption %><!--thumbnail-->
 	
 
 <div class="details">
@@ -33,7 +33,7 @@
 
 </aside><!--end of add_gal-->
 <% if current_user && current_user.id == 1 %>
-<section class="admin_panel">
+<section class="admin_panel" style="clear:both;float:left;">
 <%= link_to 'New Gallery', new_gallery_path %>
 </section>
 <% end %>

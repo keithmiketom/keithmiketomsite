@@ -1,0 +1,162 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>keithmiketom.com</title>
+  <meta name="description" content="Keithmiketom art and design portfolio">
+  <meta name="author" content="Keith Gregg, Graphic Designer and Developer">
+
+  <!-- Mmmmm, Google Web Fonts. That's a paddlin'. -->
+  <link href='http://fonts.googleapis.com/css?family=Lobster+Two:700&v2' rel='stylesheet' type='text/css'>
+ 	<%= stylesheet_link_tag    "reset" %>
+ 	<%= stylesheet_link_tag    "parastyle" %>
+	<%= stylesheet_link_tag    "style" %>
+
+<body>
+
+  <div id="main" role="main">
+
+	<!-- Section #1 / Intro -->
+	<section id="first" class="story" data-speed="8" data-type="background">    	
+    
+		<div class="introbit" data-type="sprite" data-offsetY="-300" data-Xposition="-10%" data-speed="-5"></div>		
+		<article>
+
+			<img src="/assets/bee.png" alt="intro-title"  />
+			<p>Art Design and Illustration by Keith Gregg <br /> Twitter: <a href="http://twitter.com/keithmiketom" target="_blank">@keithmiketom</a> Web: <a href="http://keithgregg.com">keithgregg.com</a></p>
+	    </article>
+	</section>
+
+	<!-- Section #2 / Background Only -->
+	<section id="second" class="story" data-speed="4" data-type="background">
+		<article>
+        	<h1>Welcome to the City...</h1>
+			<h2><a href="/about">A Bit about me</a></h2>
+		    	<p>Hi I'm Keith! I am an Artist, Designer, Illustrator, Educator, Web Developer and lover of Cats. I am from Dublin in Ireland. I Graduated from NCAD in 2006 with a BA in Art & Design Education, with aspecialism in Graphic Design, though I always took a "Fine Art" methodology t my work. 
+
+				<p>In 2012 I returned to study Web Technologies in NCI part-time, building on my graphic design skills.
+		    	</p>		
+		</article>
+	</section>
+    
+    
+	<!-- Section #3 / Web Developer -->
+	<section id="third" class="story" data-speed="6" data-type="background" data-offsetY="250">    	
+		<div class="photograph" data-type="sprite" data-offsetY="1250" data-Xposition="25%" data-speed="2"></div>
+    	<article>
+    		<h2><a href="/blogs">I Blog</a></h2>
+	    	<div class="textbox">    	
+		    	<p>I also write about what I do, whether it is Code Related (my developer hat), about Design or some Artworks I am working on. In any case, you can come and comment on what I am doing, and more importantly how I am doing, leaving suggestions and requests.</p>
+		    </div>
+    	</article>
+	</section>	
+    
+    <!-- Section #4 / Gallery and Art bit -->
+	<section id="fourth" class="story" data-speed="8" data-type="background" data-offsetY="250">
+    	<article>
+    		<h2 style="text-align: right;"> Art and the Gallery Bit</h2>
+            
+            
+	    	<div class="textbox">    	
+		    	<p>My work is a little bit quirky, and a lot of fun! I use an Illustrative style in all my approaches, and aim tomake anything I produce playful and fun to approach.
+
+<br />I base some of my personal work on the world around me, whether it is interactions with others, past experiences, or the city I live in. I also paint cats and bees that shoot lasers from their eyes</p>
+		    </div>
+           <div id="gallery" class="content">
+						<h2><%= link_to 'Artwork', galleries_path, :title => 'Art Gallery Link'%></h2>
+						<hr />
+							<div class="rm_wrapper">
+								<div id="rm_container" class="rm_container">
+									<ul>
+										<li data-images="rm_container_1" data-rotation="-15"><%= image_tag "degreeshow/Ceramic.jpg", alt:"image1" %></li>
+										<li data-images="rm_container_2" data-rotation="-5"><%= image_tag "catswithraybees/goldneko.jpg", alt:"image2" %></li>
+										<li data-images="rm_container_3" data-rotation="5"><%= image_tag "illustration/army.jpg", alt:"image1" %></li>
+										<li data-images="rm_container_4" data-rotation="15"><%= image_tag "catswithraybees/cheep.jpg", alt:"image1" %></li>
+									</ul>
+									<div id="rm_mask_left" class="rm_mask_left"></div>
+									<div id="rm_mask_right" class="rm_mask_right"></div>
+									<div id="rm_corner_left" class="rm_corner_left"></div>
+									<div id="rm_corner_right" class="rm_corner_right"></div>
+								<h2>Artwork</h2>
+									<div style="display:none;">
+										<div id="rm_container_1"><!--degree show-->
+											<%= image_tag "degreeshow/dorris.jpg", alt:"image2" %>
+											<%= image_tag "degreeshow/indifference.jpg", alt:"image3" %>
+											<%= image_tag "degreeshow/Nostalgic.jpg", alt:"image4" %>
+											<%= image_tag "degreeshow/Sweet.jpg", alt:"image4" %>
+											<%= image_tag "degreeshow/Ceramic.jpg", alt:"image1" %>
+											
+										</div>
+										<div id="rm_container_2"><!--raybees-->
+											<%= image_tag "catswithraybees/Boobee.jpg", alt:"image2" %>
+											<%= image_tag "catswithraybees/spacebbees.jpg", alt:"image3" %>
+											<%= image_tag "catswithraybees/tim-curry.jpg", alt:"image4" %>
+											<%= image_tag "catswithraybees/sr-wendy.jpg", alt:"image4", width:"350px" %>
+											<%= image_tag "catswithraybees/goldneko.jpg", alt:"image1" %>
+										
+										</div>
+										<div id="rm_container_3"><!--illustration Art-->
+											<%= image_tag "illustration/Admit.jpg", alt:"image2" %>
+											<%= image_tag "illustration/handjob.jpg", alt:"image3" %>
+											<%= image_tag "illustration/paris.jpg", alt:"image4" %>
+											<%= image_tag "illustration/bichonfrizz.jpg", alt:"image4" %>
+											<%= image_tag "illustration/army.jpg", alt:"image1" %>
+										</div>
+										<div id="rm_container_4"><!--degree show-->
+											<%= image_tag "catswithraybees/quenb.jpg", alt:"image2" %>
+											<%= image_tag "catswithraybees/ray.jpg", alt:"image3" %>
+											<%= image_tag "catswithraybees/vag.jpg", alt:"image4" %>
+											<%= image_tag "catswithraybees/ray.jpg", alt:"image4" %>
+											<%= image_tag "catswithraybees/cheep.jpg", alt:"image1" %>
+										</div>
+									</div>
+								</div>
+								<div class="rm_nav">
+									<a id="rm_next" href="#" class="rm_next"></a>
+									<a id="rm_prev" href="#" class="rm_prev"></a>
+								</div>
+								<div class="rm_controls">
+									<a id="rm_play" href="#" class="rm_play">Play</a>
+									<a id="rm_pause" href="#" class="rm_pause">Pause</a>
+								</div>
+							</div>
+						</div>
+    	</article>
+	</section>
+    
+    	
+    <!-- Section #3 / Blog -->
+	<section id="fifth" class="story" data-speed="7" data-type="background">
+		<article>
+			<h2>Web Development</h2>
+				<p>As well as Art &amp; design, I also Develop and make websites and web applications. Sometimes I will write about it in my blog. At the moment I love parallax scrolling, and I sometimes write about all the fun stuff I have learned.</p>	
+		</article>
+	</section>	
+	
+	
+
+	<!-- Section #5 / Contact me!-->
+	<section id="theend" class="story" data-speed="8" data-type="background" data-offsetY="250">    
+    <article class="introbit">
+    	<h2>Contact Me!</h2>
+    	<p>Maybe you saw the site, maybe you like my work, maybe you want to get in touch and have me design make or develop something for you? maybe you just want cake?<br /> You can also see my design site,
+    		keithgregg.com</p>
+    </article>	
+		<div class="byebye" data-type="sprite" data-offsetY="-2080" data-Xposition="50%" data-speed="-2"></div>	
+   
+	</section>
+	
+  </div> <!-- // End of #main -->
+
+
+
+
+    <%= javascript_include_tag "jquery-1.6.1.min.js" %>
+    <%= javascript_include_tag "script.js" %>
+ 	 <%= javascript_include_tag "jquery.transform-0.9.3.min_.js" %>
+	<%= javascript_include_tag "jquery.RotateImageMenu.js" %>
+
+
+</body>
+</html>

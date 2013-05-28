@@ -35,13 +35,12 @@
 					<div class="building about"> 
 						<h2><a href="about" title="about Keith">A Bit about me</a></h2>
 						<p>Hi I'm Keith! I am an Artist, Designer, Illustrator, Educator, Web Developer and lover of Cats. I am from Dublin in Ireland. I Graduated from NCAD in 2006 with a BA in Art &amp; Design Education, with aspecialism in Graphic Design, though I always took a "Fine Art" methodology to my work
-						<br />In 2012 I returned to study Web Technologies in NCI part-time, building on my graphic design skills</p>
+						<br /><br />In 2012 I returned to study Web Technologies in NCI part-time, building on my graphic design skills</p>
 					</div>
 				</div>
 				<div id="decorative" class="grid_5 omega">
-					<%=image_tag "bee.png", :class => "drag" %>
-					<%=image_tag "bee.png", :class => "drag" %>
-					<%=image_tag "bee.png", :class => "drag" %>
+				
+					<%=image_tag "bee.png", :class => "drag", :style => "width:300px" %>
 					
 				</div>
 			</div>
@@ -125,8 +124,10 @@
 			<div class="container clearfix">
 				<div class="brokenbuilding">
 					<h2><%= link_to 'Read my Blog', blogs_path, :title => 'blog link' %></h2>
-				<p>Maybe you saw the site, maybe you like my work, maybe you want to get in touch and have me design make or develop something for you? maybe you just want cake? either way, fill in the form and I'll get in touch</p>
-	
+				<p style="width:65%;color:white; text-align: justify; float:left;">
+					I also write about what I do, whether it is Code Related (my developer hat), about Design or some Artworks I am working on. In any case, you can come and comment on what I am doing, and more importantly how I am doing, leaving suggestions and requests.
+					</p>
+					<%= image_tag "nav/SPEECH.png", alt:"speech bubble", style:"float:right;width:30%; margin-top:-170px;" %>
 				</div>
 			</div>
 		</div>
@@ -134,7 +135,9 @@
 			<div class="container clearfix">
 				<div class="forgrnd"> 
 					<h2>Developer</h2>
-					<p>Maybe you saw the site, maybe you like my work, maybe you want to get in touch and have me design make or develop something for you? maybe you just want cake? either way, fill in the form and I'll get in touch</p>
+					<p>As well as Art &amp; design, I also Develop and make websites and web applications. Sometimes I will write about it in my blog. At the moment I love parallax scrolling, and I sometimes write about all the fun stuff I have learned.
+					</p>
+					
 				</div><!--close fgd-->
 				<div id="sky">
 					<div id="bckgrnd">
@@ -149,11 +152,12 @@
 		<div class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0.9">
 			<div class="container clearfix">
 				<div id="content" class="grid_12">
-					<div class="building contact"> 
+					
 						<h2><%= link_to "Contact Keith", contact_path, :title =>"Contact me" %></h2>
-						<p>Maybe you saw the site, maybe you like my work, maybe you want to get in touch and have me design make or develop something for you? maybe you just want cake? either way, fill in the form and I'll get in touch</p>
+						<p style="width:65%;color:white; text-align: justify;">Maybe you saw the site, maybe you like my work, maybe you want to get in touch and have me design make or develop something for you? maybe you just want cake? either way, fill in the form and I'll get in touch 
+							</p>
 						<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-					</div><!--close B C-->
+					
 				</div><!--closeCntnt-->
 			</div><!--close cnt clfx-->
 		</div><!--close B C-->
@@ -168,6 +172,7 @@
 <%= javascript_include_tag "jquery-ui-1.10.2.custom.min" %>
 <%= javascript_include_tag "jquery.transform-0.9.3.min_.js" %>
 <%= javascript_include_tag "jquery.RotateImageMenu.js" %>
+<%= javascript_include_tag "jquery.scrolling-parallax.js" %>
 <script>
 	
 		$(".drag").draggable();

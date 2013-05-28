@@ -34,6 +34,8 @@ Keithmiketom3::Application.routes.draw do
     match 'contactme' => 'contact_forms#new'
     match 'blog' => 'blogs#index'
     match 'art' => 'galleries#index'
+    match  'home' => 'parallax#homepage'
+    match 'althome' => 'parallax#home'
 
     
 
@@ -74,7 +76,7 @@ Keithmiketom3::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'parallax#home'
+  root :to => 'parallax#homepage'
 
   # See how all your routes lay out with "rake routes"
 

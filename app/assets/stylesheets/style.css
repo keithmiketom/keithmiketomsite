@@ -385,6 +385,8 @@ div#gallery{
 	z-index:900;
 	top:50px;
 	left:50px;
+	color:red;
+	text-align:justify;
 
 }
 #slide4 #sky{
@@ -404,8 +406,8 @@ div#gallery{
 	background-image:url('nav/bg-city-bg.gif');
 	background-repeat:repeat-x;
 	margin:0 -1000px 0;
-	width:4500px;
-	height:700px;
+	width:4000px;
+	height:750px;
 	position:absolute;
 	bottom:0;
 	z-index:3;
@@ -414,7 +416,7 @@ div#gallery{
 #slide4 #mdlgrnd{
 	background-image:url('nav/bg-city2.gif');
 	background-repeat:repeat-x;
-	width:5000px;
+	width:4500px;
 	height:700px;
 	margin-left:-30px;
 	position:absolute;
@@ -425,13 +427,16 @@ div#gallery{
 #slide4 #forgrnd{
 	background-image:url('nav/frgd-city.gif');
 	background-repeat:repeat-x;
-	width:6000px;
+	width:4000px;
 	height:500px;
 	position:absolute;
 	bottom:0;
 	z-index:5;
 	overflow:auto;
 
+}
+#slide4 #forgrnd p{
+	color:black;
 }
 
 /* Slide 5 */
@@ -629,4 +634,13 @@ div#gallery{
 	height:400px;
 	background-color: red;
 	border-radius:5px;
+}
+
+
+p {
+	text-align:justify;
+}
+#slide6 img{
+	width:30%;
+	float:right;
 }
